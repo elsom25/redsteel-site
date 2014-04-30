@@ -4,5 +4,7 @@ body.action-home { background-image:url('//everest.com/assets/launch/body.jpg');
 
   main { @include vertical-align(-20%); margin:0 auto; width:450px; }
   h2 { color:#fff; font-size:1.5rem; text-align:center; }
-  footer { background:#111; background:transparentize(#000, .25); bottom:0; position:fixed; width:100%; }
+  footer { background:#111; background:transparentize(#000, .25); bottom:0; position:fixed; width:100%;
+    a { @include standard-link(#fff, $primary-color); }
+  }
 }
