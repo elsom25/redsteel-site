@@ -7,18 +7,18 @@ html lang=I18n.locale.to_s xmlns='http://www.w3.org/1999/xhtml'
 
     title= content_for?(:title) ? "#{yield(:title)} | #{t('app.title')}" : t('app.title')
 
+    == stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Roboto:300'
+    == stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Open+Sans:400,700'
     == stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
+
     == javascript_include_tag :modernizr
+
     == csrf_meta_tags
     == yield :head
 
   body class="controller-#{controller_path.gsub(/\//, '-')} action-#{action_name}"
-    header
-      == render 'layouts/navigation'
-      == render 'layouts/messages'
-
-    main[role='main']
-      == yield
+    == render 'layouts/messages'
+    == content_for?(:content) ? yield(:content) : yield
 
     / Javascript files
     == javascript_include_tag 'application', 'data-turbolinks-track' => true

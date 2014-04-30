@@ -1,0 +1,9 @@
+linters:
+  SingleLinePerSelector:
+    enabled: false
+
+  SpaceAfterPropertyColon:
+    enabled: false
+
+  UrlFormat:
+    enabled: false

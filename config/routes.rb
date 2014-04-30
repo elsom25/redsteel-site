@@ -1,3 +1,5 @@
 RoommatesSite::Application.routes.draw do
-  root :to => 'visitors#new'
+  get '/about' => 'pages#about'
+
+  root to: 'pages#home'
 end

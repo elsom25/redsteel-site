@@ -24,7 +24,8 @@ $body-font-color: $font-color;
 $body-font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
 
 $header-font-color: $font-color;
-$header-font-family: join('Viga', $body-font-family);
+$header-font-family: join('Roboto', $body-font-family);
+$header-font-weight: 300;
 
 //
 // TOP BAR
