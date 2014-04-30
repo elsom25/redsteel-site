@@ -1,0 +1,45 @@
+//
+// Foundation Overrides
+// @see: https://github.com/zurb/foundation/blob/master/scss/foundation/_settings.scss
+//
+
+// Allows the use of rem-calc() or lower-bound() in your settings
+@import "foundation/_functions";
+
+//
+// Global
+
+// We use these as default colors throughout
+// $primary-color: #008CBA;
+// $secondary-color: #e7e7e7;
+// $alert-color: #f04124;
+// $success-color: #43AC6A;
+// $warning-color: #f08a24;
+// $info-color: #a0d3e8;
+
+//
+// TYPOGRAPHY
+
+$body-font-color: $font-color;
+$body-font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+
+$header-font-color: $font-color;
+$header-font-family: join('Viga', $body-font-family);
+
+//
+// TOP BAR
+
+// Background color for the top bar
+$topbar-bg-color: $primary-color;
+
+// Height and margin
+$topbar-height: 45px*1.5; //45px;
+
+// Controlling the styles for the title in the top bar
+$topbar-title-font-size: rem-calc(19); //rem-calc(17);
+
+// Set the link colors and styles for top-level nav
+$topbar-link-weight: 300; //normal;
+$topbar-link-font-size: rem-calc(15); //rem-calc(13);
+$topbar-link-hover-lightness: -6%; //-10%; // Darken by 10%
+$topbar-link-bg-hover: scale-color($primary-color, $lightness: $primary-color-adjust); //#272727;
