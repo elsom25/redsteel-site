@@ -36,6 +36,10 @@ group :development do
   gem 'rails_layout'
 end
 
+group :staging, :production do
+  gem 'rails_12factor'                        # Allow heroku to compile assets
+end
+
 group :doc do
   gem 'sdoc',               '~> 0.4.0'
 end
