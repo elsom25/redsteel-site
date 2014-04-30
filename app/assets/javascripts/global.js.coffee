@@ -9,9 +9,7 @@ stop_spinner = ->
   return
 
 Turbolinks.enableTransitionCache()
-
-$document = $(document)
-$document.on 'page:fetch', start_spinner()
-$document.on 'page:receive', stop_spinner()
+$(document).on 'page:fetch', start_spinner()
+$(document).on 'page:receive', stop_spinner()
 
 $ -> $(document).foundation()
