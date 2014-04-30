@@ -12,9 +12,11 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.spin
+
 //= require turbolinks
+
 //= require foundation
+
+//= require global
 //= require_tree .
-$(function() {
-  $(document).foundation();
-});

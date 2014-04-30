@@ -1,2 +1,11 @@
 ::selection { background:$primary-color; color:#fff; }
 ::-moz-selection { background:$primary-color; color:#fff; }
+
+.blur-all {
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+  height: 100%;
+}
