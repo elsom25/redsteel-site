@@ -4,6 +4,9 @@ body.action-home { background-color:#5c5173; background-image:image-url('bg.png'
 
   %dark-background { background:$off-black; background:transparentize(#000, .7); }
 
+  // Headings
+  //
+
   // STANDARD
   h1, h2 { @extend %dark-background; color:#fff; display:inline-block; font-family:'Exo 2', sans-serif; line-height:1.25; margin:0 0 .25rem; padding:.25rem .5rem;
   }
@@ -11,14 +14,47 @@ body.action-home { background-color:#5c5173; background-image:image-url('bg.png'
   h1 { font-weight:300; }
 
   // SCREEN DEPENDENT
-  h1, h2 {
-    font-size:1.4rem;
+  h1, h2 { font-size:1.4rem;
     @include respond-to(medium) { font-size:1.7rem; }
-    @include respond-to(large)  { font-size:2rem; }
+    @include respond-to(large) { font-size:2rem; }
   }
 
+
+  // Page Structure
+  //
+
+  // STANDARD
   main { @include vertical-align(-30%); padding:2rem; }
-  footer { @extend %dark-background; bottom:0; position:fixed; width:100%;
-    a { @include standard-link(#fff, $primary-color); }
+  footer { @extend %dark-background; bottom:0; padding:.5rem 2rem; position:fixed; width:100%;
+    a { @include simple-link(#fff); }
   }
+  .site-nav {
+    a { font-size:.9rem; text-transform:uppercase; }
+  }
+
+  // SCREEN DEPENDENT
+  .social-nav, .site-nav {
+    ul { list-style-type:none; margin:0; text-align:center; }
+    li { display:inline-block; margin-right:2rem;
+      &:last-child { margin-right:0; }
+    }
+    @include respond-to(medium) {
+      ul { @include inline-list; margin:0; }
+      li { margin-right:0; }
+    }
+  }
+  .social-nav { margin-bottom:.5rem;
+    @include respond-to(medium) {
+      margin-bottom:0;
+      ul { clear:left; float:left;
+        & > li:first-child { margin-left:0; } // OVERRIDE
+      }
+    }
+  }
+  .site-nav {
+    @include respond-to(medium) {
+      ul { clear:right; float:right; }
+    }
+  }
+
 }

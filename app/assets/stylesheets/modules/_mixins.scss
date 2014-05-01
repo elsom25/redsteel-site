@@ -1,8 +1,5 @@
-@mixin standard-link($normal, $underline:$normal, $hover:false) {
-  @include link-colors($normal, $hover); border-bottom:1px dotted $underline;
-
-  &:focus { border:1px dashed; }
-  &:hover { background:fade-out($underline, .75); border-bottom:1px solid; }
+@mixin simple-link($normal, $hover:false) {
+  @include link-colors($normal, $hover);
   &:active { position:relative; top:1px; }
 }
 

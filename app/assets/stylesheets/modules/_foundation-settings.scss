@@ -4,7 +4,7 @@
 //
 
 // Allows the use of rem-calc() or lower-bound() in your settings
-@import "foundation/_functions";
+@import 'foundation/_functions';
 
 //
 // Global
@@ -22,6 +22,7 @@
 
 $body-font-color: $font-color;
 $body-font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+$body-font-weight: 300;
 
 $header-font-color: $font-color;
 $header-font-family: join('Roboto', $body-font-family);
