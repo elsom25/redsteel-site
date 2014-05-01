@@ -15,7 +15,6 @@ gem 'jbuilder',             '~> 2.0'          # Nice JSON builder (app builder)
 gem 'jquery-rails'                            # jQuery
 gem 'jquery-turbolinks'
 gem 'modernizr-rails'                         # Modernizr
-gem 'spinjs-rails'                            # Spinner
 
 # Assets
 gem 'sass-rails',           '~> 4.0.3'
