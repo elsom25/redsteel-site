@@ -1,0 +1,36 @@
+::selection { background:$primary-color; background:transparentize($primary-color, .7); color:#fff; }
+::-moz-selection { background:$primary-color; background:transparentize($primary-color, .7); color:#fff; }
+
+footer { @extend %dark-background; bottom:0; padding:$footer-padd $side-spacing; position:fixed; width:100%;
+  a { @include simple-link(#fff); }
+  .site-nav {
+    a { font-size:.9rem; text-transform:uppercase; }
+  }
+
+  // SCREEN DEPENDENT
+  .social-nav, .site-nav {
+    ul { list-style-type:none; margin:0; text-align:center; }
+    li { display:inline-block; margin-right:2rem;
+      &:last-child { margin-right:0; }
+    }
+    @include respond-to(medium) {
+      ul { @include inline-list; margin:0; }
+      li { margin-right:0; }
+    }
+  }
+
+  .social-nav { margin-bottom:$footer-padd;
+    @include respond-to(medium) {
+      margin-bottom:0;
+      ul { clear:left; float:left;
+        & > li:first-child { margin-left:0; } // OVERRIDE
+      }
+    }
+  }
+
+  .site-nav {
+    @include respond-to(medium) {
+      ul { clear:right; float:right; }
+    }
+  }
+}

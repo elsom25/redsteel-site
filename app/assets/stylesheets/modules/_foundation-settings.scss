@@ -27,21 +27,3 @@ $body-font-weight: 300;
 $header-font-color: $font-color;
 $header-font-family: join('Roboto', $body-font-family);
 $header-font-weight: 300;
-
-//
-// TOP BAR
-
-// Background color for the top bar
-$topbar-bg-color: $primary-color;
-
-// Height and margin
-$topbar-height: 45px*1.5; //45px;
-
-// Controlling the styles for the title in the top bar
-$topbar-title-font-size: rem-calc(19); //rem-calc(17);
-
-// Set the link colors and styles for top-level nav
-$topbar-link-weight: 300; //normal;
-$topbar-link-font-size: rem-calc(15); //rem-calc(13);
-$topbar-link-hover-lightness: -6%; //-10%; // Darken by 10%
-$topbar-link-bg-hover: scale-color($primary-color, $lightness: $primary-color-adjust); //#272727;

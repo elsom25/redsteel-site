@@ -17,9 +17,25 @@ html lang=I18n.locale.to_s xmlns='http://www.w3.org/1999/xhtml'
     == csrf_meta_tags
     == yield :head
 
-  body class="controller-#{controller_path.gsub(/\//, '-')} action-#{action_name}"
+  body class="controller-#{controller_path.gsub(/\//, '-')} action-#{action_name} layout-#{controller.send(:_layout)}"
     == render 'layouts/messages'
     == content_for?(:content) ? yield(:content) : yield
+
+    footer
+      nav.social-nav
+        ul
+          li= link_to '#facebook' do
+            = fa_icon 'facebook-square'
+          li= link_to '#twitter' do
+            = fa_icon 'twitter-square'
+          li= link_to '#email' do
+            = fa_icon 'envelope'
+
+      nav.site-nav
+        ul
+          li= link_to t('pages.about'), about_path
+          li= link_to t('pages.team'), '#'
+          li= link_to t('pages.blog'), '#'
 
     / Javascript files
     == javascript_include_tag 'application', 'data-turbolinks-track' => true

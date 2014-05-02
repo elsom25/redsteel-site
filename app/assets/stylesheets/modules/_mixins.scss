@@ -1,6 +1,7 @@
 @mixin simple-link($normal, $hover:false) {
   @include link-colors($normal, $hover);
   &:active { position:relative; top:1px; }
+  &:hover, &:focus { color:$normal; }
 }
 
 @mixin vertical-align($offset:0%) {
@@ -24,3 +25,5 @@
     @include min-screen(64.063em) { @content; }
   }
 }
+
+%dark-background { background:$off-black; background:transparentize(#000, .7); }
