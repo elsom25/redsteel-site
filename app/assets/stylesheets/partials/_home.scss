@@ -22,10 +22,12 @@ body.action-home { background-color:#5c5173; background-image:image-url('bg.png'
 
   // Page Structure
   //
+  $side-spacing: 2rem;
+  $footer-padd: 1rem;
 
   // STANDARD
-  main { @include vertical-align(-30%); padding:2rem; }
-  footer { @extend %dark-background; bottom:0; padding:.5rem 2rem; position:fixed; width:100%;
+  main { @include vertical-align(-30%); padding:$side-spacing; }
+  footer { @extend %dark-background; bottom:0; padding:$footer-padd $side-spacing; position:fixed; width:100%;
     a { @include simple-link(#fff); }
   }
   .site-nav {
@@ -43,7 +45,7 @@ body.action-home { background-color:#5c5173; background-image:image-url('bg.png'
       li { margin-right:0; }
     }
   }
-  .social-nav { margin-bottom:.5rem;
+  .social-nav { margin-bottom:$footer-padd;
     @include respond-to(medium) {
       margin-bottom:0;
       ul { clear:left; float:left;
