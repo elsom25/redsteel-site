@@ -1,0 +1,23 @@
+- content_for :content
+  header
+    .fixed
+      nav.top-bar.base-nav
+        /! Title Area
+        ul.title-area
+          li.name
+            h1= link_to t('app_name'), root_path
+          li.toggle-topbar.menu-icon: a href="#"
+            span Menu
+
+        /! Content
+        section.top-bar-section
+          ul.left
+            = nav_link t('pages.about'), about_path
+            = nav_link t('pages.team'),  '#'
+            = nav_link t('pages.blog'),  '#'
+
+  main.sub-page[role='main']
+    .content-wrap
+      == content_for?(:content) ? yield(:content) : yield
+
+= render template: 'layouts/application'
