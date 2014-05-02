@@ -6,12 +6,15 @@ body.layout-sub_page { background-color:#5c5173; //background-image:image-url('b
 
     left:$menu-padd; position:fixed; top:$menu-padd; z-index:10;
 
+    .logo { background-image:image-url('logo.png'); background-size:contain; cursor:pointer; float:left; height:$image-size; overflow:hidden; text-indent:100%; white-space:nowrap; width:$image-size; }
+
+    // make list inline
     ul { @include inline-list; float:left; margin:0 0 0 $menu-padd; }
     li:first-child { margin-left:0; } // OVERRIDE
 
-    .logo { background-image:image-url('logo.png'); background-size:contain; cursor:pointer; float:left; height:$image-size; overflow:hidden; text-indent:100%; white-space:nowrap; width:$image-size; }
-
-    a {
+    // fancy link effects
+    //    we target `ul a` as to not conflict with `.logo`
+    ul a {
       // styles
       @include simple-link(#fff); font-size:.75rem; letter-spacing:.125rem; line-height:$image-size; text-transform:uppercase;
       &:hover { border-bottom:2px solid; }
@@ -19,14 +22,14 @@ body.layout-sub_page { background-color:#5c5173; //background-image:image-url('b
       // animations
       transition:all .1s ease-out; -webkit-transform:translate3d(-10px,0,0); opacity:0;
     }
+
     // animations
     .two a { transition:all .2s ease-out; }
     .three a { transition:all .3s ease-out; }
-    &:hover a, &.active { opacity:1; -webkit-transform:translate3d(0,0,0); }
-
+    &:hover a, &.active a { opacity:1; -webkit-transform:translate3d(0,0,0); }
   }
 
-  & > main { @include grid-row(); color:#fff; margin-top:5rem;
+  & > main { @include grid-row(); color:#fff; margin-top:5rem; margin-bottom:6rem;
     .content-wrap { @include grid-column(12); }
     h1, h2, h3, h4, h5, h6 { color:#fff; }
     a { @include simple-link(#fff); border-bottom:1px solid;

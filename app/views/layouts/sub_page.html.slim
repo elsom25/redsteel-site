@@ -1,7 +1,7 @@
 - content_for :content
-  header
+  header.active
     nav
-      .logo= link_to t('app.title'), root_path
+      = link_to t('app.title'), root_path, class: 'logo'
       ul.inactive
         li.one= link_to t('pages.about'), about_path
         li.two= link_to t('pages.team'),  '#'
