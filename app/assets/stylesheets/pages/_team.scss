@@ -15,7 +15,7 @@ body[data-action='team'] {
     }
   }
 
-  .img-wrap { @include border-radius(100%); border:5px solid #fff; display:inline-block;
+  .avatar { @include border-radius(100%); border:10px solid #fff; display:inline-block;
     img { @include border-radius(100%); display:block; margin:0 auto; }
   }
 
