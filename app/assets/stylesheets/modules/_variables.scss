@@ -14,6 +14,7 @@ $off-black:          #222;
 $blue:               #268ddf;
 $red:                #af2229;
 $purple:             #af06be;
+$purple-gray:        #5c5173;
 
 // ============================================================================
 // Style Variables
@@ -21,10 +22,10 @@ $purple:             #af06be;
 // Sets particular style requirements
 //
 
-$primary-color:        $purple;
-$primary-color-adjust: -7%;
+$primary-color:         $purple;
+$secondary-color:       $purple-gray;
 
-$font-color:           $dark-gray;
+$font-color:            $dark-gray;
 
-$side-spacing:         2rem;
-$footer-padd:          1rem;
+$side-spacing:          2rem;
+$footer-padd:           1rem;

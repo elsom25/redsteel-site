@@ -17,7 +17,7 @@ html lang=I18n.locale.to_s xmlns='http://www.w3.org/1999/xhtml'
     == csrf_meta_tags
     == yield :head
 
-  body class="controller-#{controller_path.gsub(/\//, '-')} action-#{action_name} layout-#{controller.send(:_layout)}"
+  body[data-controller="#{controller.controller_name}" data-action="#{action_name}" data-layout="#{controller.send(:_layout)}"]
     == render 'layouts/messages'
     == content_for?(:content) ? yield(:content) : yield
 

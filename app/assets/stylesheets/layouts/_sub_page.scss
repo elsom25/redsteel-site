@@ -1,4 +1,4 @@
-body.layout-sub_page { background-color:#5c5173; //background-image:image-url('bg.png'); background-position:center center; background-size:cover;
+body[data-layout='sub_page'] { background-color:$secondary-color; //background-image:image-url('bg.png'); background-position:center center; background-size:cover;
 
   & > header {
     $image-size: 44px;
