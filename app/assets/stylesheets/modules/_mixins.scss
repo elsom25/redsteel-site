@@ -19,10 +19,10 @@
 // $xxlarge-range: (120.063em);
 @mixin respond-to($media) {
   @if $media == medium {
-    @include min-screen(40.063em) { @content; }
+    @media #{$medium-up} { @content; }
   }
   @elseif $media == large {
-    @include min-screen(64.063em) { @content; }
+    @media #{$large-up} { @content; }
   }
 }
 
