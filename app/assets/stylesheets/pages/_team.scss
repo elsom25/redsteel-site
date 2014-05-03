@@ -7,8 +7,12 @@ body[data-action='team'] {
     }
   }
 
-  .members { @include grid-row();
-    @include respond-to(medium) { section { @include grid-column(4); } }
+  .members { @include grid-row(); margin-top:2.5rem;
+    section { margin-bottom:2.5rem; }
+
+    @include respond-to(medium) { margin-top:5rem;
+      section { @include grid-column(4); margin-bottom:0; }
+    }
   }
 
   .img-wrap { @include border-radius(100%); border:5px solid #fff; display:inline-block;
