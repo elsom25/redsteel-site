@@ -36,4 +36,6 @@ body[data-layout='sub_page'] { background-color:$secondary-color; //background-i
       &:hover { border-bottom-style:dotted; }
     }
   }
+
+  & > footer { background:$off-black; }
 }
