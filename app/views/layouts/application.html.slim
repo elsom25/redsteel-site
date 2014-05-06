@@ -35,7 +35,7 @@ html lang=I18n.locale.to_s xmlns='http://www.w3.org/1999/xhtml'
         ul
           li= link_to t('pages.about'), about_path
           li= link_to t('pages.team'),  team_path
-          li= link_to t('pages.blog'),  '#'
+          li= link_to t('pages.blog'),  posts_path
 
     / Javascript files
     == javascript_include_tag 'application', 'data-turbolinks-track' => true

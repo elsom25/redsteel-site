@@ -1,0 +1,5 @@
+- content_for :title do
+  = resource.title.titleize
+
+== render 'feed_link'
+== render resource, summary: false
