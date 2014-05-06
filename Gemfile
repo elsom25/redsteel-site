@@ -7,14 +7,14 @@ gem 'sqlite3', group: [:development, :test]   # Dev & Test DB
 gem 'pg',      group: :production             # Production DB
 
 # Server
-gem 'thin'
+gem 'thin'                                    # Nicer server
 gem 'awesome_print'                           # Fancy console printing
 gem 'jbuilder',             '~> 2.0'          # Nice JSON builder (app builder)
 
 # Javascript
 gem 'jquery-rails'                            # jQuery
-gem 'jquery-turbolinks'
-gem 'modernizr-rails'                         # Modernizr
+gem 'jquery-turbolinks'                       # Turbolinks jQuery adapter
+gem 'modernizr-rails'                         # Modernizr, req'd for Foundation
 
 # Assets
 gem 'sass-rails',           '~> 4.0.3'
@@ -27,12 +27,12 @@ gem 'font-awesome-rails'
 gem 'uglifier',             '>= 1.3.0'
 
 group :development do
-  gem 'spring'                                # rails quick loader
-  gem 'better_errors'
-  gem 'binding_of_caller'
-  gem 'meta_request'
+  gem 'spring'                                # Rails quick loader
+  gem 'better_errors'                         # Nice errors screens
+  gem 'binding_of_caller'                     # Req'd for `better_errors`
+  gem 'meta_request'                          # Adaptor for browser inspector
   gem 'hub', require: nil                     # GitHub integration
-  gem 'quiet_assets'
+  gem 'quiet_assets'                          # Reduces console output
   gem 'rails_layout'
 end
 
