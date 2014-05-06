@@ -10,6 +10,7 @@ gem 'pg',      group: :production             # Production DB
 gem 'thin'                                    # Nicer server
 gem 'awesome_print'                           # Fancy console printing
 gem 'jbuilder',             '~> 2.0'          # Nice JSON builder (app builder)
+gem 'postmarkdown'                            # Blog Engine
 
 # Javascript
 gem 'jquery-rails'                            # jQuery
