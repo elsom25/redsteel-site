@@ -13,9 +13,9 @@
       /! Content
       .top-bar-section
         ul.right
-          li= link_to t('pages.about'), about_path
-          li= link_to t('pages.team'),  team_path
-          li= link_to t('pages.blog'),  posts_path
+          = nav_link t('pages.about'), about_path
+          = nav_link t('pages.team'),  team_path
+          = nav_link t('pages.blog'),  posts_path
 
   main[role='main']
     .content-wrap
