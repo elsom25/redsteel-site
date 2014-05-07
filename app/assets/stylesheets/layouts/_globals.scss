@@ -7,6 +7,17 @@ p { font-weight:100; }
 // hack so that margin on child elements doesn't collapse
 .body-wrap { padding-bottom:1px; }
 
+// spinner
+.loading-indicator { $height:75px;
+  background:transparentize(#000, .5) center center no-repeat; height:100%; position:fixed; text-align:center; width:100%;
+  .float { float:left; height:50%; margin-bottom:-#{$height/2}; }
+  .indicator { color:#fff; clear:both; height:$height; position:relative; }
+}
+
+
+
+
+
 // Footer: GENERAL STYLES
 body > footer { bottom:0; padding:$footer-padd $side-spacing; position:fixed; width:100%;
   a { @include simple-link(#fff); }

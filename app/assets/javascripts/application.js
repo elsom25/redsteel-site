@@ -23,7 +23,8 @@
 // Application JS
 //
 
-//=# require my_script
+//=# require analytics
+//= require loading_indicator
 
 // Other
 //

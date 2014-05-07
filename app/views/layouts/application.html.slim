@@ -19,6 +19,10 @@ html lang=I18n.locale.to_s xmlns='http://www.w3.org/1999/xhtml'
     == yield :head
 
   body[data-controller="#{controller.controller_name}" data-action="#{action_name}" data-layout="#{controller.send(:_layout)}"]
+    .loading-indicator
+      .float
+      .indicator
+        i.fa.fa-spinner.fa-spin.fa-5x
     .body-wrap
       == render 'layouts/messages'
       == content_for?(:content) ? yield(:content) : yield
