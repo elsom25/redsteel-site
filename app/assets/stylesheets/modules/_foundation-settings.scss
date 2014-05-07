@@ -27,3 +27,27 @@ $body-font-weight: 300;
 $header-font-color: $font-color;
 $header-font-family: join('Roboto', $body-font-family);
 $header-font-weight: 300;
+
+//
+// TOP BAR
+
+// Background color for the top bar
+$topbar-bg-color: transparent; //#333;
+
+// Height and margin
+$topbar-height: 45px*2; //45px;
+
+// Controlling the styles for the title in the top bar
+$topbar-title-font-size: rem-calc(19); //rem-calc(17);
+
+// Style the top bar dropdown elements
+$topbar-dropdown-bg: $topbar-bg-color; //#333;
+$topbar-dropdown-link-bg: $topbar-bg-color; //#333;
+$topbar-link-weight: 300; //normal;
+$topbar-link-font-size: rem-calc(15); //rem-calc(13);
+$topbar-link-bg-hover: $topbar-bg-color; //#272727;
+$topbar-dropdown-label-bg: $topbar-bg-color; //#333;
+
+// Divider Styles
+$topbar-divider-border-bottom: none; //solid 1px lighten($topbar-bg-color, 10%);
+$topbar-divider-border-top: none; //solid 1px darken($topbar-bg-color, 10%);

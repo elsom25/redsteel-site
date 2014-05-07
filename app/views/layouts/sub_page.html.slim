@@ -1,11 +1,21 @@
 - content_for :content
-  header
-    nav
-      = link_to t('app.title'), root_path, class: 'logo'
-      ul.inactive
-        li.one= link_to t('pages.about'),  about_path
-        li.two= link_to t('pages.team'),   team_path
-        li.three= link_to t('pages.blog'), '#'
+  .root-nav.contain-to-grid
+    nav.top-bar[data-topbar]
+      /! Title Area
+      ul.title-area
+        li.name
+          h1
+            /= image_tag 'logo.png', size: '44'
+            = link_to t('app.title'), root_path
+        li.toggle-topbar.menu-icon: a href='#'
+          span Menu
+
+      /! Content
+      .top-bar-section
+        ul.right
+          li= link_to t('pages.about'), about_path
+          li= link_to t('pages.team'),  team_path
+          li= link_to t('pages.blog'),  posts_path
 
   main[role='main']
     .content-wrap
