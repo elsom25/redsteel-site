@@ -1,5 +1,5 @@
 = content_tag_for :article, post, class: "#{'summary' if summary}" do
-  header: h1= post.title
+  header: h1= link_to post.title, post
 
   section
     - if summary

@@ -6,7 +6,12 @@ body[data-controller='posts'] {
     h1 { font-size:1.15rem; letter-spacing:.5rem; margin-bottom:0; margin-top:0; text-align:center; text-transform:uppercase; }
     a, a:hover { color:$off-black; }
 
-    header { @include background-size(cover); background:$dark-gray url('http://www.boltmade.com/assets/covers/header3-dcce3a92ace6213d9471cea2f80e0388.jpg'); background-position:50% 50%; border:1px solid #fff; padding:2rem 0; }
+    header { @include background-size(cover); background:$dark-gray url('http://www.boltmade.com/assets/covers/header3-dcce3a92ace6213d9471cea2f80e0388.jpg'); background-position:50% 50%; border:1px solid #fff; padding:2rem 0;
+      a { border:none;
+        &, &:hover { color:#fff; }
+        &:hover { border-bottom:1px solid; }
+      }
+    }
     section { padding:1rem 1.5rem; }
 
     &.summary { margin-bottom:2.5rem;
