@@ -18,8 +18,9 @@ html lang=I18n.locale.to_s xmlns='http://www.w3.org/1999/xhtml'
     == yield :head
 
   body[data-controller="#{controller.controller_name}" data-action="#{action_name}" data-layout="#{controller.send(:_layout)}"]
-    == render 'layouts/messages'
-    == content_for?(:content) ? yield(:content) : yield
+    .body-wrap
+      == render 'layouts/messages'
+      == content_for?(:content) ? yield(:content) : yield
 
     footer
       nav.social-nav
@@ -33,9 +34,13 @@ html lang=I18n.locale.to_s xmlns='http://www.w3.org/1999/xhtml'
 
       nav.site-nav
         ul
+          - unless current_page? root_path
+            li= link_to t('app.title'),   root_path
           li= link_to t('pages.about'), about_path
           li= link_to t('pages.team'),  team_path
           li= link_to t('pages.blog'),  posts_path
+
+      .clearfix
 
     / Javascript files
     == javascript_include_tag 'application', 'data-turbolinks-track' => true

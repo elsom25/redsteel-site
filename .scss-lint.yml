@@ -7,3 +7,7 @@ linters:
 
   UrlFormat:
     enabled: false
+
+  SelectorDepth:
+    enabled: true
+    max_depth: 5
