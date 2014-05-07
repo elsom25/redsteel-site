@@ -3,7 +3,7 @@ body[data-layout='sub_page'] { background-color:$secondary-color; //background-i
   h1, h2, h3, h4, h5, h6 { color:#fff; }
 
   & > .root-nav { @include background-size(cover); background:darken($secondary-color, 10%) image-url('bg.png'); background-position:50% 100%;
-    li.active a { border-bottom:1px solid transparentize(#fff, .65);
+    li.active a { border-bottom:1px solid mix($secondary-color, #fff, 65%);
       &:hover { border-bottom:2px solid #fff; }
     }
     a { font-size:.75rem; letter-spacing:.25rem; text-transform:uppercase;
