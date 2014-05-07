@@ -1,9 +1,11 @@
-body[data-layout='sub_page'] { background-color:$secondary-color; //background-image:image-url('bg.png'); background-position:center center; background-size:cover;
+body[data-layout='sub_page'] {
 
   h1, h2, h3, h4, h5, h6 { color:#fff; }
 
-  & > .root-nav { @include background-size(cover); background:darken($secondary-color, 10%) image-url('bg.png'); background-position:50% 100%;
-    li.active a { border-bottom:1px solid mix($secondary-color, #fff, 65%);
+  .body-wrap { background-color:$secondary-color; /*background-image:image-url('bg.png'); background-position:center center; background-size:cover;*/ }
+
+  .body-wrap > .root-nav { @include background-size(cover); background:darken($secondary-color, 10%) image-url('bg.png'); background-position:50% 100%;
+    li.active a { border-bottom:1px solid mix($secondary-color, #fff, 55%);
       &:hover { border-bottom:2px solid #fff; }
     }
     a { font-size:.75rem; letter-spacing:.25rem; text-transform:uppercase;
@@ -12,7 +14,7 @@ body[data-layout='sub_page'] { background-color:$secondary-color; //background-i
     .name a { letter-spacing:.5rem; }
   }
 
-  & > main { @include grid-row(); color:#fff; margin-bottom:6rem; margin-top:2rem;
+  .body-wrap > main { @include grid-row(); color:#fff; margin-bottom:6rem; margin-top:2rem;
     .content-wrap { @include grid-column(12); }
     h1, h2, h3, h4, h5, h6 { color:#fff; }
     a { @include simple-link(#fff); border-bottom:1px solid;
@@ -29,5 +31,5 @@ body[data-layout='sub_page'] { background-color:$secondary-color; //background-i
     }
   }
 
-  & > footer { background:$off-black; }
+  & > footer { background:$off-black; position:initial; }
 }

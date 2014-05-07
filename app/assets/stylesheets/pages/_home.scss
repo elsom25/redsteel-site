@@ -1,5 +1,7 @@
 body[data-action='home'] { background-color:$secondary-color; background-image:image-url('bg.png'); background-position:center center; background-size:cover;
 
+  .body-wrap { height:100%; }
+
   // Headings
   //
 
@@ -15,9 +17,9 @@ body[data-action='home'] { background-color:$secondary-color; background-image:i
     @include respond-to(large) { font-size:2rem; }
   }
 
-
   // Page Structure
   //
 
   main { @include vertical-align(-30%); padding:$side-spacing; }
+  & > footer { @extend %dark-background; }
 }

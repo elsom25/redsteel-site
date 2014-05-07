@@ -1,10 +1,14 @@
 ::selection { background:$primary-color; background:transparentize($primary-color, .7); color:#fff; }
 ::-moz-selection { background:$primary-color; background:transparentize($primary-color, .7); color:#fff; }
 
+body, body > footer { background:$off-black; }
 p { font-weight:100; }
 
+// hack so that margin on child elements doesn't collapse
+.body-wrap { padding-bottom:1px; }
+
 // Footer: GENERAL STYLES
-body > footer { @extend %dark-background; bottom:0; padding:$footer-padd $side-spacing; position:fixed; width:100%;
+body > footer { bottom:0; padding:$footer-padd $side-spacing; position:fixed; width:100%;
   a { @include simple-link(#fff); }
 
   .site-nav {
