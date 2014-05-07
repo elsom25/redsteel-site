@@ -7,7 +7,7 @@ body[data-controller='posts'] {
     a, a:hover { color:$off-black; }
 
     header { @include background-size(cover); background:$dark-gray url('http://www.boltmade.com/assets/covers/header3-dcce3a92ace6213d9471cea2f80e0388.jpg'); background-position:50% 50%; border:1px solid #fff; padding:2rem 0;
-      a { border:none;
+      a { border:0;
         &, &:hover { color:#fff; }
         &:hover { border-bottom:1px solid; }
       }
