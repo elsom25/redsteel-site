@@ -15,17 +15,18 @@
 //= require jquery.turbolinks
 //= require jquery_ujs
 
-// Rails plugins
-//
-
-//= require turbolinks
-
 // External Libraries
 //
 
-//=# require foundation
+//= require foundation
 
 // Application JS
 //
 
 //= require global
+
+// Other
+//
+
+//= require turbolinks
+Turbolinks.enableTransitionCache();

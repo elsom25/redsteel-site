@@ -1,2 +1,1 @@
-Turbolinks.enableTransitionCache()
-$ -> $(document).foundation()
+$(document).foundation()
