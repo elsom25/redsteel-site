@@ -23,7 +23,7 @@
 // Application JS
 //
 
-//= require global
+//=# require my_script
 
 // Other
 //

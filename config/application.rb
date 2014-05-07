@@ -21,7 +21,7 @@ module RoommatesSite
     # config.i18n.default_locale = :de
 
     # For Foundation 5
-    config.assets.precompile += %w( vendor/modernizr )
+    config.assets.precompile += %w( foundation_setup.js )
 
   end
 end
