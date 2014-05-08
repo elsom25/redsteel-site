@@ -15,7 +15,6 @@ gem 'postmarkdown'                            # Blog Engine
 # Javascript
 gem 'jquery-rails'                            # jQuery
 gem 'jquery-turbolinks'                       # Turbolinks jQuery adapter
-gem 'modernizr-rails'                         # Modernizr, req'd for Foundation
 
 # Assets
 gem 'sass-rails',           '~> 4.0.3'
