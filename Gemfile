@@ -36,6 +36,10 @@ group :development do
   gem 'rails_layout'
 end
 
+group :development, :test do
+  gem 'dotenv-rails',       '~> 0.10'
+end
+
 group :staging, :production do
   gem 'rails_12factor'                        # Allow heroku to compile assets
 end
