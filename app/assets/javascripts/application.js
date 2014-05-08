@@ -23,6 +23,7 @@
 // Application JS
 //
 
+//= require feature_tests
 //=# require analytics
 //= require loading_indicator
 

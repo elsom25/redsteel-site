@@ -21,7 +21,7 @@ gem 'modernizr-rails'                         # Modernizr, req'd for Foundation
 gem 'sass-rails',           '~> 4.0.3'
 gem 'coffee-rails',         '~> 4.0.0'
 gem 'slim-rails'
-gem 'compass-rails'
+gem 'compass-rails',        '~> 1.1.7'
 gem 'foundation-rails'
 gem 'font-awesome-rails'
 

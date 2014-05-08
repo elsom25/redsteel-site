@@ -20,8 +20,6 @@ module RoommatesSite
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
 
-    # For Foundation 5
-    config.assets.precompile += %w( foundation_setup.js )
-
+    config.assets.precompile += %w( foundation_setup.js loading_indicator_ie.js )
   end
 end
