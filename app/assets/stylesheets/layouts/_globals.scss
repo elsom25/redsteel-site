@@ -22,7 +22,7 @@ body > footer { bottom:0; padding:$footer-padd $side-spacing; position:fixed; wi
   a { @include simple-link(#fff); }
 
   .site-nav {
-    a { font-size:.9rem; text-transform:uppercase; }
+    a { font-size:.9rem; }
   }
 
   // Footer: SCREEN DEPENDENT
