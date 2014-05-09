@@ -1,20 +1,17 @@
 body[data-action='home'] { background-color:$secondary-color; background-image:image-url('bg.png'); background-position:center center; background-size:cover;
 
-  .body-wrap { height:100%; }
+  .body-wrap { height:100%;
+    // STANDARD
+    h1, h2 { @extend %dark-background; color:#fff; display:inline-block; font-family:'Exo 2', sans-serif; line-height:1.25; margin:0 0 .25rem; padding:.25rem .5rem;
+    }
+    h2 { font-weight:100; }
+    h1 { font-weight:300; }
 
-  // Headings
-  //
-
-  // STANDARD
-  h1, h2 { @extend %dark-background; color:#fff; display:inline-block; font-family:'Exo 2', sans-serif; line-height:1.25; margin:0 0 .25rem; padding:.25rem .5rem;
-  }
-  h2 { font-weight:100; }
-  h1 { font-weight:300; }
-
-  // SCREEN DEPENDENT
-  h1, h2 { font-size:1.4rem;
-    @include respond-to(medium) { font-size:1.7rem; }
-    @include respond-to(large) { font-size:2rem; }
+    // SCREEN DEPENDENT
+    h1, h2 { font-size:1.4rem;
+      @include respond-to(medium) { font-size:1.7rem; }
+      @include respond-to(large) { font-size:2rem; }
+    }
   }
 
   // Page Structure
