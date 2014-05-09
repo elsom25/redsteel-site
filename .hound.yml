@@ -3,6 +3,7 @@ AllCops:
   Exclude:
     - 'vendor/**'
     - 'bin/**'
+    - 'db/**'
 
 AccessModifierIndentation:
   EnforcedStyle: outdent
@@ -10,6 +11,9 @@ AccessModifierIndentation:
 AlignHash:
   EnforcedHashRocketStyle: separator
   EnforcedColonStyle: separator
+
+ClassAndModuleChildren:
+  Enabled: false
 
 Documentation:
   Enabled: false
@@ -38,8 +42,14 @@ RaiseArgs:
 Semicolon:
   AllowAsExpressionSeparator: true
 
+SpaceBeforeBlockBraces:
+  EnforcedStyle: no_space
+
 SpaceAroundEqualsInParameterDefault:
   EnforcedStyle: no_space
+
+SingleLineMethods:
+  Enabled: false
 
 WhileUntilModifier:
   MaxLineLength: 120
