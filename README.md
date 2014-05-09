@@ -13,12 +13,12 @@ Setup (OSX)
 5. Install gems: `bundle install`
 6. Save your own copy of `config/database.yml.sample` as `config/database.yml` with your own development DB settings
 7. Setup you environment variables:
-  - create a file in app root, `.env`
+  - create a file in app root: `.env`
   - Run `rake secret`
-  - Take the output and set `SECRET_KEY_BASE` environment variable to that. i.e.: `SECRET_KEY_BASE=#{output from rake secret}`
+  - Take the output and set `SECRET_KEY_BASE` environment variable to that in `.env`. i.e.: `SECRET_KEY_BASE=#{output from rake secret}`
 
 Run
 ---
 
 1. `rails s`
-2. `Feel special!`
+2. Feel special!
