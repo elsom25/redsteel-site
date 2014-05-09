@@ -11,7 +11,6 @@ Setup (OSX)
 3. Setup ruby: `rvm install ruby-2.1.1`
 4. Use ruby: `rvm use ruby-2.1.1`
 5. Install gems: `bundle install`
-6. Save your own copy of `config/database.yml.sample` as `config/database.yml` with your own development DB settings
 7. Setup you environment variables:
   - create a file in the application root: `.env`
   - Run `rake secret`
