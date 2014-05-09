@@ -6,7 +6,6 @@ gem 'turbolinks'                              # Makes page loads faster
 
 # Server
 gem 'thin'                                    # Nicer server
-gem 'awesome_print'                           # Fancy console printing
 gem 'postmarkdown'                            # Blog Engine
 
 # Javascript
