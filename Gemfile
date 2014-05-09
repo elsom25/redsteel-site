@@ -3,8 +3,6 @@ ruby '2.1.1'
 
 gem 'rails',                '4.1.0'           # Rails
 gem 'turbolinks'                              # Makes page loads faster
-gem 'sqlite3', group: [:development, :test]   # Dev & Test DB
-gem 'pg',      group: :production             # Production DB
 
 # Server
 gem 'thin'                                    # Nicer server
@@ -34,9 +32,6 @@ group :development do
   gem 'hub', require: nil                     # GitHub integration
   gem 'quiet_assets'                          # Reduces console output
   gem 'rails_layout'
-end
-
-group :development, :test do
   gem 'dotenv-rails',       '~> 0.10'
 end
 
