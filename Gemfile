@@ -31,14 +31,9 @@ group :development do
   gem 'meta_request'                          # Adaptor for browser inspector
   gem 'hub', require: nil                     # GitHub integration
   gem 'quiet_assets'                          # Reduces console output
-  gem 'rails_layout'
   gem 'dotenv-rails',       '~> 0.10'
 end
 
 group :staging, :production do
   gem 'rails_12factor'                        # Allow heroku to compile assets
-end
-
-group :doc do
-  gem 'sdoc',               '~> 0.4.0'
 end
