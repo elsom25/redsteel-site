@@ -11,9 +11,7 @@ p { font-weight:100; }
 .loading-indicator { $box-size:32px*1.5; $cube:10px*1.5;
   @include transition(background-color 0.2s ease-in-out 0);
   background-color:transparentize(#000, .4); cursor:wait; height:100%; position:fixed; text-align:center; width:100%; z-index:1;
-  .float { float:left; height:50%; margin-bottom:-#{$box-size/2}; }
-  .indicator { color:#fff; clear:both; height:$box-size; position:relative; }
-  .spinner { height:$box-size; margin:100px auto; position:relative; width:$box-size; }
+  .spinner { color:#fff; height:$box-size; width:$box-size; margin:auto; position: absolute; top:0; bottom:0; left:0; right:0;}
   .cube1, .cube2 { @include animation(cubemove 1.8s infinite ease-in-out); background-color:#fff; height:$cube; left:0; position:absolute; top:0; width:$cube; }
   .cube2 { @include animation-delay(-0.9s); }
 }
