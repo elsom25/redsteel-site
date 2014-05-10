@@ -11,5 +11,4 @@ protected
       'sub_page'
     end
   end
-
 end
