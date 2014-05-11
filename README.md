@@ -11,9 +11,9 @@ Setup (OSX)
 3. Setup ruby: `rvm install ruby-2.1.1`
 4. Use ruby: `rvm use ruby-2.1.1`
 5. Install gems: `bundle install`
-7. Setup you environment variables:
+7. Setup your environment variables:
   - create a file in the application root: `.env`
-    - The format of the file is `Key=Value`
+    - The format of the file is `Key=Value`, with a newline separating each key.
   - Cookie Secret:
     - Key = `SECRET_KEY_BASE`
     - Value = result of `rake secret`
