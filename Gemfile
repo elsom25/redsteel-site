@@ -7,6 +7,7 @@ gem 'turbolinks'                              # Makes page loads faster
 # Server
 gem 'thin'                                    # Nicer server
 gem 'postmarkdown'                            # Blog Engine
+gem 'gibbon',               '~> 1.1'          # Mailchimp API
 
 # Javascript
 gem 'jquery-rails'                            # jQuery
