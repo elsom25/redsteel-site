@@ -30,7 +30,7 @@ group :development do
   # gem 'pry-rails'                             # some nicities for pry
   # gem 'jazz_hands'                            # pry wrapper for rails
 
-  gem 'dotenv-rails',       '~> 0.10'
+  gem 'dotenv-rails',       '~> 0.10'         # Nicer ENV variable handling
 end
 
 group :staging, :production do
