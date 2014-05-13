@@ -1,6 +1,10 @@
 class Registration
   include ActiveModel::Model
-  attr_accessor :email, :first_name, :last_name
+
+  attr_reader :email, :first_name, :last_name
+  def email=(val);      @email = val.try(:downcase);      end
+  def first_name=(val); @first_name = val.try(:titleize); end
+  def last_name=(val);  @last_name = val.try(:titleize);  end
 
   validates :email,      presence: true, format: /@/
   validates :first_name, presence: true
@@ -8,11 +12,6 @@ class Registration
 
   def initialize(attributes={})
     super
-
-    @email = email.try(:downcase)
-    @first_name = first_name.try(:titleize)
-    @last_name = last_name.try(:titleize)
-
     @gibbon = Gibbon::API.new
   end
 
