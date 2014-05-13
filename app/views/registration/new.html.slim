@@ -7,13 +7,16 @@ main[role='main']
   h1 Love your <em>#{t('app.title')}</em>.
 
   = form_for @registration, url: registration_index_path do |f|
-    = f.label :first_name
-    = f.text_field :first_name
+    .row
+      .medium-6.columns
+        = f.text_field :first_name, placeholder: 'First Name'
+      .medium-6.columns
+        = f.text_field :last_name, placeholder: 'Last Name'
 
-    = f.label :last_name
-    = f.text_field :last_name
-
-    = f.label :email
-    = f.text_field :email
-
-    = f.button :submit
+    .row
+      .small-12.columns
+        .row.collapse
+          .small-10.columns
+            = f.email_field :email, placeholder: 'Email'
+          .small-2.columns
+            = f.button 'Sign Up', class: 'button postfix'

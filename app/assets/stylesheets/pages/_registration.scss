@@ -17,6 +17,7 @@ body[data-controller='registration'] { background-color:$secondary-color; backgr
   // Page Structure
   //
 
-  main { @include vertical-align(-30%); padding:$side-spacing; }
+  main { @include vertical-align(-10%); padding:$side-spacing; }
   & > footer { @extend %dark-background; }
+  form { max-width:35rem; }
 }
