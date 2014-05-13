@@ -1,7 +1,7 @@
 Roommates Site
 ==============
 
-Site for our [HouseMate](//github.com/elsom25/roommates) application.
+Site for our [HouseMate](//github.com/elsom25/redsteel) application.
 
 Setup (OSX)
 -----------
