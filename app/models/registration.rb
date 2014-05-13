@@ -2,8 +2,6 @@ class Registration
   include ActiveModel::Model
   attr_accessor :email, :first_name, :last_name
 
-  PRIMARY_LIST_KEY = '9e843427cc'.freeze
-
   validates :email,      presence: true, format: /@/
   validates :first_name, presence: true
   validates :last_name,  presence: true
