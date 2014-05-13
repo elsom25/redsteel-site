@@ -1,0 +1,19 @@
+main[role='main']
+  h2
+    | Don’t let living together
+    br
+    | get in the way of living together.
+  .break
+  h1 Love your <em>#{t('app.title')}</em>.
+
+  = form_for @registration, url: registration_index_path do |f|
+    = f.label :first_name
+    = f.text_field :first_name
+
+    = f.label :last_name
+    = f.text_field :last_name
+
+    = f.label :email
+    = f.text_field :email
+
+    = f.button :submit
