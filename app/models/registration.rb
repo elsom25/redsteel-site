@@ -19,7 +19,7 @@ class Registration
     fail unless self.valid?
 
     mailchimp_hash = {
-                id: PRIMARY_LIST_KEY,
+                id: secrets.mailchimp_list_key,
              email: { email: @email },
         merge_vars: { FNAME: @first_name, LNAME: @last_name },
       double_optin: false
