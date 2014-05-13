@@ -19,7 +19,7 @@ gem 'coffee-rails',         '~> 4.0.0'
 gem 'uglifier',             '>= 1.3.0'
 gem 'slim-rails'
 gem 'compass-rails',        '~> 1.1.7'
-gem 'foundation-rails'
+gem 'foundation-rails',     '~> 5.2'
 gem 'font-awesome-rails'
 
 group :development do

@@ -245,7 +245,7 @@ DEPENDENCIES
   compass-rails (~> 1.1.7)
   dotenv-rails (~> 0.10)
   font-awesome-rails
-  foundation-rails
+  foundation-rails (~> 5.2)
   gibbon (~> 1.1)
   jazz_hands
   jquery-rails
