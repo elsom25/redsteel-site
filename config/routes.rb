@@ -1,4 +1,4 @@
-RoommatesSite::Application.routes.draw do
+RedSteelSite::Application.routes.draw do
   postmarkdown as: :blog
 
   get '/about' => 'pages#about', as: 'about'

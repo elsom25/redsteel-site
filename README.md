@@ -1,4 +1,4 @@
-Roommates Site
+Red Steel Site
 ==============
 
 Site for our [HouseMate](//github.com/elsom25/redsteel) application.
