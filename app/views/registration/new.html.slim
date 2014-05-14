@@ -6,17 +6,21 @@ main[role='main']
   .break
   h1 Love your <em>#{t('app.title')}</em>.
 
-  = form_for @registration, url: registration_index_path do |f|
+  = form_for @registration, url: registration_index_path, html: { 'data-abide' => '' } do |f|
     .row
       .medium-6.columns
-        = f.text_field :first_name, placeholder: 'First Name'
+        = f.text_field :first_name, placeholder: 'First Name', reguired: '', pattern: '[a-zA-Z]+'
+        // if @registration.errors.messages[:first_name].present?
+        small.error First Name must be a string
       .medium-6.columns
-        = f.text_field :last_name, placeholder: 'Last Name'
+        = f.text_field :last_name, placeholder: 'Last Name', reguired: '', pattern: '[a-zA-Z]+'
+        small.error Last Name must be a string
 
     .row
       .small-12.columns
         .row.collapse
           .small-10.columns
-            = f.email_field :email, placeholder: 'Email'
+            = f.email_field :email, placeholder: 'Email', reguired: ''
+            small.error Email must be a valid email
           .small-2.columns
             = f.button 'Sign Up', class: 'button postfix'

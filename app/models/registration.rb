@@ -15,7 +15,7 @@ class Registration
     @gibbon = Gibbon::API.new
   end
 
-  def subscribe!
+  def subscribe
     return unless self.valid?
 
     mailchimp_hash = {
@@ -25,6 +25,10 @@ class Registration
       double_optin: false
     }
 
-    @gibbon.lists.subscribe mailchimp_hash
+    @gibbon.lists.subscribe(mailchimp_hash)
+    true
+  rescue Gibbon::MailChimpError => e
+    self.errors.add(:base, "Error #{e.code}: #{e.message}")
+    false
   end
 end

@@ -6,10 +6,10 @@ class RegistrationController < ApplicationController
   def create
     @registration = Registration.new(registration_params)
 
-    if @registration.valid?
-      @registration.subscribe!
+    if @registration.subscribe
       redirect_to root_path, notice: 'Success!'
     else
+      flash.now[:error] = @registration.errors.full_messages.join(', ')
       render action: :new
     end
   end
