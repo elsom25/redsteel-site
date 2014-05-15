@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.1.1'
+ruby '2.1.2'
 
 gem 'rails',                '~> 4.1.0'        # Rails
 gem 'turbolinks'                              # Makes page loads faster
@@ -26,6 +26,9 @@ group :development do
   gem 'better_errors'                         # Nice errors screens
   gem 'binding_of_caller'                     # Req'd for `better_errors`
   gem 'quiet_assets'                          # Reduces console output
+  # gem 'pry-rails'                             # some nicities for pry
+  # gem 'jazz_hands'                            # pry wrapper for rails
+
   gem 'dotenv-rails',       '~> 0.10'
 end
 
