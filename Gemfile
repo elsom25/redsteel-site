@@ -24,13 +24,18 @@ gem 'font-awesome-rails'
 
 group :development do
   gem 'spring'                                # Rails quick loader
+
   gem 'better_errors'                         # Nice errors screens
   gem 'binding_of_caller'                     # Req'd for `better_errors`
   gem 'quiet_assets'                          # Reduces console output
-  gem 'pry-rails'                             # some nicities for pry
-  # gem 'jazz_hands'                            # pry wrapper for rails
 
   gem 'dotenv-rails',       '~> 0.10'         # Nicer ENV variable handling
+
+  # TEMP: Handle version issues;
+  # Makes the console much nicer and provices nice dev tools
+  gem 'jazz_hands',         github: 'nixme/jazz_hands',
+                            branch: 'bring-your-own-debugger'
+  gem 'pry-byebug'
 end
 
 group :staging, :production do
