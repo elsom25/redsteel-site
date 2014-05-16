@@ -28,7 +28,7 @@ class Registration
     @gibbon.lists.subscribe(mailchimp_hash)
     true
   rescue Gibbon::MailChimpError => e
-    self.errors.add(:base, "Error #{e.code}: #{e.message}")
+    @errors.add(:base, "Error #{e.code}: #{e.message}")
     false
   end
 end
