@@ -7,7 +7,8 @@ class RegistrationController < ApplicationController
     @registration = Registration.new(registration_params)
 
     if @registration.subscribe
-      redirect_to root_path, notice: 'Success!'
+      cookies[:subscribed] = true
+      redirect_to root_path, notice: "#{@registration.first_name}, we've signed up #{@registration.email} successfully! Thanks!"
     else
       flash.now[:error] = @registration.errors.full_messages.join(', ')
       render action: :new
