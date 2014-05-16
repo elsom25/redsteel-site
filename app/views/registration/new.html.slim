@@ -1,0 +1,24 @@
+main[role='main']
+  h2
+    | Don’t let living together
+    br
+    | get in the way of living together.
+  .break
+  h1 Love your <em>#{t('app.title')}</em>.
+
+  - unless cookies[:subscribed]
+    = form_for @registration, url: registration_path, html: { 'data-abide' => '' } do |f|
+      .first-name-field
+        = f.text_field :first_name, placeholder: 'First Name', reguired: '', pattern: '[a-zA-Z ]+'
+        small.error First Name must be a string
+
+      .last-name-field
+        = f.text_field :last_name, placeholder: 'Last Name', reguired: '', pattern: '[a-zA-Z ]+'
+        small.error Last Name must be a string
+
+      .email-field-block
+        .email-field
+          = f.email_field :email, placeholder: 'Email', reguired: ''
+          small.error Email must be a valid email
+        .submit
+          = f.button 'Sign Up', class: 'button postfix'
