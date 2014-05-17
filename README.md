@@ -1,7 +1,7 @@
-Roommates Site
+Red Steel Site
 ==============
 
-Site for our [HouseMate](//github.com/elsom25/roommates) application.
+Site for our [HouseMate](//github.com/elsom25/redsteel) application.
 
 Setup (OSX)
 -----------
@@ -11,10 +11,15 @@ Setup (OSX)
 3. Setup ruby: `rvm install ruby-2.1.1`
 4. Use ruby: `rvm use ruby-2.1.1`
 5. Install gems: `bundle install`
-7. Setup you environment variables:
+7. Setup your environment variables:
   - create a file in the application root: `.env`
-  - Run `rake secret`
-  - Take the output and set `SECRET_KEY_BASE` environment variable to that in `.env`. i.e.: `SECRET_KEY_BASE=#{output from rake secret}`
+    - The format of the file is `Key=Value`, with a newline separating each key.
+  - Cookie Secret:
+    - Key = `SECRET_KEY_BASE`
+    - Value = result of `rake secret`
+  - Email Secret:
+    - Key = `MAILCHIMP_API_KEY`
+    - Value = visit [Mailchimp](https://us8.admin.mailchimp.com/account/api/) or talk to [Jesse](mailto:jesse@jcmcginnis.com) to get the `Website` API key
 
 Run
 ---
