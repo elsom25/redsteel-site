@@ -4,9 +4,11 @@
 body, body > footer { background:$off-black; }
 p { font-weight:100; }
 
-.alert-box { $alert-color: mix($primary-color, $alert-color);
-  font-size:1rem; left:0; padding:1.25rem 0; position:fixed; right:0; text-align:center; top:0;
-  &.alert { background-color:$alert-color; border-color:darken($alert-color, 10%); }
+.alert-box { $alert: mix($primary-color, $alert-color); $success: mix($primary-color, $success-color);
+  font-size:1rem; left:0; padding:1.25rem 0; position:absolute; right:0; text-align:center; top:0;
+  &.alert { background-color:$alert; border-color:darken($alert, 10%); }
+  &.success { background-color:$success; border-color:darken($success, 10%); }
+  a { border-bottom:none !important; }
 }
 
 // hack so that margin on child elements doesn't collapse
@@ -19,6 +21,30 @@ p { font-weight:100; }
   .spinner { color:#fff; height:$box-size; width:$box-size; margin:auto; position: absolute; top:0; bottom:0; left:0; right:0;}
   .cube1, .cube2 { @include animation(cubemove 1.8s infinite ease-in-out); background-color:#fff; height:$cube; left:0; position:absolute; top:0; width:$cube; }
   .cube2 { @include animation-delay(-0.9s); }
+}
+
+form.new_registration { margin-top:.25rem; max-width:20.25rem;
+  input { margin-bottom:.25rem; }
+  .error {
+    input { margin-bottom: 0; }
+    small.error { margin-bottom:.25rem; }
+  }
+
+  .email-field-block { @include grid-row($behavior:collapse);
+    .email-field { @include grid-column(8, $collapse:true); }
+    .submit { @include grid-column(4, $collapse:true); }
+    @include respond-to(medium) {
+      .email-field { @include grid-column(9, $collapse:true); }
+      .submit { @include grid-column(3, $collapse:true); }
+    }
+  }
+
+  @include respond-to(medium) { max-width:30rem;
+    input, .error small.error { margin-bottom:.5rem; }
+    .first-name-field, .last-name-field { display:inline-block; width:49%; }
+    .first-name-field { margin-right:1%; }
+    .last-name-field { margin-left:1%; }
+  }
 }
 
 // Footer: GENERAL STYLES
