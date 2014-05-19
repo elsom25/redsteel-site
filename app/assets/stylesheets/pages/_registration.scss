@@ -19,28 +19,4 @@ body[data-controller='registration'] { background-color:$secondary-color; backgr
 
   main { @include vertical-align(-10%); padding:$side-spacing; }
   & > footer { @extend %dark-background; }
-
-  form { margin-top:.25rem; max-width:20.25rem;
-    input { margin-bottom:.25rem; }
-    .error {
-      input { margin-bottom: 0; }
-      small.error { margin-bottom:.25rem; }
-    }
-
-    .email-field-block { @include grid-row($behavior:collapse);
-      .email-field { @include grid-column(8, $collapse:true); }
-      .submit { @include grid-column(4, $collapse:true); }
-      @include respond-to(medium) {
-        .email-field { @include grid-column(9, $collapse:true); }
-        .submit { @include grid-column(3, $collapse:true); }
-      }
-    }
-
-    @include respond-to(medium) { max-width:30rem;
-      input, .error small.error { margin-bottom:.5rem; }
-      .first-name-field, .last-name-field { display:inline-block; width:49%; }
-      .first-name-field { margin-right:1%; }
-      .last-name-field { margin-left:1%; }
-    }
-  }
 }

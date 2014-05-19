@@ -1,17 +1,16 @@
 Red Steel Site
 ==============
 
-Site for our [HouseMate](//github.com/elsom25/redsteel) application.
+Site for our [HouseHippo](//github.com/elsom25/redsteel) application.
 
 Setup (OSX)
 -----------
 
 1. install xcode/xcode developer tools/homebrew
 2. `brew update`
-3. Setup ruby: `rvm install ruby-2.1.1`
-4. Use ruby: `rvm use ruby-2.1.1`
-5. Install gems: `bundle install`
-7. Setup your environment variables:
+3. Setup ruby: `rvm install ruby-2.1.2`
+4. Install gems: `bundle install`
+5. Setup your environment variables:
   - create a file in the application root: `.env`
     - The format of the file is `Key=Value`, with a newline separating each key.
   - Cookie Secret:
