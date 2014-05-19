@@ -14,3 +14,6 @@ ul
   li Set up automated reminders to go straight to your email, or remind a housemate that a chore hasn’t been done.
 
 p With #{t('app.title')}, don’t let living together get in the way of living together.
+
+- unless cookies[:subscribed]
+  p #{link_to 'Sign up now', root_path} to be the first know about #{t('app.title')}.

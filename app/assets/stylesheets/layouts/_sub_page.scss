@@ -1,8 +1,9 @@
 body[data-layout='sub_page'] {
 
   h1, h2, h3, h4, h5, h6 { color:#fff; }
+  main { position:relative; }
 
-  .body-wrap { background-color:$secondary-color; /*background-image:image-url('bg.png'); background-position:center center; background-size:cover;*/ }
+  .body-wrap { background-color:$secondary-color; }
 
   .body-wrap > .root-nav { @include background-size(cover); background:darken($secondary-color, 10%) image-url('bg.png'); background-position:50% 100%;
     a { font-size:.75rem; letter-spacing:.25rem; text-transform:uppercase; }

@@ -6,3 +6,7 @@ en:
     about:              'About'
     team:               'Team'
     blog:               'Blog'
+
+  errors:
+    messages:
+      blank: "is required"

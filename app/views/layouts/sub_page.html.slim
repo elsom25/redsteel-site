@@ -18,6 +18,7 @@
           = nav_link t('pages.blog'),  posts_path
 
   main[role='main']
+    == render 'layouts/messages'
     .content-wrap
       == content_for?(:content) ? yield(:content) : yield
 

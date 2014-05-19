@@ -31,4 +31,12 @@ class Registration
     @errors.add(:base, "Error #{e.code}: #{e.message}")
     false
   end
+
+  def error_message
+    @errors.full_messages.join(', ')
+  end
+
+  def notice
+    "#{@first_name}, we've signed up #{@email} successfully! Thanks!"
+  end
 end

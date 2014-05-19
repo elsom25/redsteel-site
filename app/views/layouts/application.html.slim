@@ -26,7 +26,6 @@ html lang=I18n.locale.to_s xmlns='http://www.w3.org/1999/xhtml'
         .cube2
         i.ie-spinner.fa.fa-spinner.fa-spin.fa-3x[style='display:none;']
     .body-wrap
-      == render 'layouts/messages'
       == content_for?(:content) ? yield(:content) : yield
 
     footer
