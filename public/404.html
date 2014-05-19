@@ -11,7 +11,7 @@ Please, don't: https://github.com/styleguide/templates/2.0
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Page Not Found (404) | HouseMate</title>
+    <title>Not Found (404) | HouseMate</title>
     <style>
       * { line-height:1.5; margin:0; }
 
@@ -19,10 +19,11 @@ Please, don't: https://github.com/styleguide/templates/2.0
       ::-moz-selection { background:#af06ee; background:rgba(175, 6, 190, 0.3); color:#fff; }
 
       html { background-color:#5c5173; color:#fff; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; text-align: center; }
-      body { left: 50%; margin: -225px 0 0 -250px; position: absolute; top: 50%; width: 500px; }
+      body { left: 50%; margin: -210px 0 0 -250px; position: absolute; top: 50%; width: 500px; }
 
       h1 { letter-spacing:-1px; font-size:5em; font-weight:100; margin:0 0 .25em 0; text-shadow:2px 3px 3px #2E2C33; }
-      p { color:#fff; font-size:20px; font-weight:100; letter-spacing:2px; line-height:1.6; margin:0 0 60px 0; }
+      h2 {  letter-spacing:.25em; font-size:1em; font-weight:100; margin-bottom:-.5em; text-transform:uppercase; }
+      p { color:#fff; font-size:1.35em; font-weight:100; letter-spacing:.125em; line-height:1.6; margin:0 0 60px 0; }
 
       a { color: #fff; border-bottom: 1px solid; text-decoration:none; }
       a:hover { border-bottom-style: dotted; }
@@ -35,7 +36,7 @@ Please, don't: https://github.com/styleguide/templates/2.0
 
       .suggestions { color: #ccc; margin-top:35px; }
 
-      @media only screen and (max-width: 500px) {
+      @media screen and (max-width: 500px), screen and (max-height: 400px) {
         body { margin: 2.5em auto; position: static; width: 95%; }
         h1 { margin-bottom:0; }
       }
@@ -43,9 +44,9 @@ Please, don't: https://github.com/styleguide/templates/2.0
   </head>
 
   <body>
-    <div clas="sadface">):</div>
-    <h1>404.</h1>
-    <p>We've encounted an error. We can't find the page you're looking for.</p>
+    <h2>Not Found</h2>
+    <h1>404</h1>
+    <p>We can't find the page you're looking for. It might be gone forever, or may have moved to a new home.</p>
 
     <div class='suggestions'>
       <a href='mailto:nvredsteel@gmail.com'>Contact Us</a> &mdash;
