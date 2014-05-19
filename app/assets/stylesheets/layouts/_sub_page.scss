@@ -10,9 +10,9 @@ body[data-layout='sub_page'] {
     .name a { letter-spacing:.5rem; }
     @include respond-to(medium) {
       li.active a { border-bottom:1px solid mix($secondary-color, #fff, 55%);
-        &:hover { border-bottom:2px solid #fff; }
+        &:hover { border-bottom:1px solid #fff; }
       }
-      a:hover { border-bottom:2px solid; }
+      a:hover { border-bottom:1px solid; }
     }
   }
 
