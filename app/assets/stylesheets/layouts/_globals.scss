@@ -4,6 +4,11 @@
 body, body > footer { background:$off-black; }
 p { font-weight:100; }
 
+.alert-box { $alert-color: mix($primary-color, $alert-color);
+  font-size:1rem; left:0; padding:1.25rem 0; position:fixed; right:0; text-align:center; top:0;
+  &.alert { background-color:$alert-color; border-color:darken($alert-color, 10%); }
+}
+
 // hack so that margin on child elements doesn't collapse
 .body-wrap { padding-bottom:1px; }
 
