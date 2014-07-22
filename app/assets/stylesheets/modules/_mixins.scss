@@ -22,29 +22,6 @@
   }
 }
 
-// TODO: REQUIRES SASS 3.3
-// WAITING ON: https://github.com/rails/sass-rails/pull/192
-// $name: keyframe name
-// $transformations: ( 0: (transform: translateX(42px)), 50: (transform: translateX(0px)) )
-
-// @mixin keyframes($name, $transformations) {
-//   @each $vendor in '-webkit-', '-moz-', '-ms-', '-o-', '' {
-
-//     #{$vendor}keyframes #{$name} {
-//       @each $percent, $properties in #{$transformations} {
-
-//         '#{percent}%' {
-//           @each $property, $value in $properties {
-//             #{$vendor}#{property}: #{$value};
-//           }
-//         }
-
-//       }
-//     }
-
-//   }
-// }
-
 // Media Query Ranges
 // $small-range: (0em, 40em);
 // $medium-range: (40.063em, 64em);

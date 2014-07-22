@@ -5,7 +5,7 @@ body[data-layout='sub_page'] {
 
   .body-wrap { background-color:$secondary-color; }
 
-  .body-wrap > .root-nav { @include background-size(cover); background:darken($secondary-color, 10%) image-url('bg.png'); background-position:50% 100%;
+  .body-wrap > .root-nav { @include background-size(cover); background:darken($secondary-color, 10%) image-url('bg.jpg'); background-position:50% 100%;
     a { font-size:.75rem; letter-spacing:.25rem; text-transform:uppercase; }
     .name a { letter-spacing:.5rem; }
     @include respond-to(medium) {
